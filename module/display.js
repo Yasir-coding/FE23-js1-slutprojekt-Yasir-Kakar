@@ -7,7 +7,7 @@ function displayInfo(movieList) {
     let imgEl = document.createElement("img");
 
     if (movieList[i].poster_path == null) {
-      imgEl.src = "./images/handsome.svg";
+      imgEl.src = "./images/handsome.jpg";
     } else {
       imgEl.src = `https://image.tmdb.org/t/p/w300/${movieList[i].poster_path}`;
     }
@@ -39,7 +39,7 @@ function displayInfoSearch(movieList) {
   for (let i = 0; i < movieList.length; i++) {
     let imgEl = document.createElement("img");
     if (movieList[i].poster_path == null) {
-      imgEl.src = "./images/handsome.svg";
+      imgEl.src = "./images/handsome.jpg";
     } else {
       imgEl.src = `https://image.tmdb.org/t/p/w300/${movieList[i].poster_path}`;
     }
@@ -71,7 +71,7 @@ function displayActor(actorInfo) {
     let imgEl = document.createElement("img");
 
     if (actorInfo[i].profile_path == null) {
-      imgEl.src = "./images/handsome.svg";
+      imgEl.src = "./images/handsome.jpg";
     } else {
       imgEl.src = `https://image.tmdb.org/t/p/w500/${actorInfo[i].profile_path}`;
     }
