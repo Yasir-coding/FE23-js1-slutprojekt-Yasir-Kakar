@@ -8,19 +8,17 @@ async function fetchTmdb(urlApi) {
 
   try {
     const result = await fetch(url);
-    // console.log(result);
 
     const data = await result.json();
 
-
     if (data.results.length === 0) {
-      return "not found"
+      return "not found";
     } else {
       return data.results;
     }
   }
-  catch (error) {
-    return displayFetchError(error)
+  catch {
+    return displayFetchError();
   }
 
 }
