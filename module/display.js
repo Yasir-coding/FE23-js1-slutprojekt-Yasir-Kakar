@@ -30,7 +30,6 @@ function displayInfo(movieList) {
     resultDiv.append(box);
 
   }
-
 }
 
 function displayInfoSearch(movieList) {
@@ -94,9 +93,7 @@ function displayActor(actorInfo) {
       else {
         participatedIn.innerText = actorInfo[i].known_for[j].media_type + ": " + actorInfo[i].known_for[j].title;
       }
-
       participatedInDiv.append(participatedIn);
-
     }
 
     let box = document.createElement("div");
@@ -145,7 +142,5 @@ function slideBoxes(box) {
   }
   anime(slide);
 }
-
-
 
 export { displayInfo, displayInfoSearch, displayActor, displayCategoryError, displayFetchError }

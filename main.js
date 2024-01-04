@@ -39,6 +39,7 @@ searchForm.addEventListener("submit", async event => {
     }
     searchForm.reset();
   }
+  
   else if (rbName === true) {
 
     if (actorName === "not found") {
