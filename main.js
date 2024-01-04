@@ -30,22 +30,20 @@ searchForm.addEventListener("submit", async event => {
 
   let actorName = await fetchTmdb(`https://api.themoviedb.org/3/search/person?query=${textInputSearch}&include_adult=false&language=en-US&page=1&api_key=`);
 
-
   if (rbMovies === true) {
 
     if (movieName === "not found") {
       displayCategoryError("Movie ", textInputSearch)
-    } else if(movieName.length > !undefined){
+    } else if (movieName.length > !undefined) {
       displayInfoSearch(movieName);
     }
     searchForm.reset();
-
   }
   else if (rbName === true) {
 
     if (actorName === "not found") {
       displayCategoryError("Actor ", textInputSearch)
-    } else if(actorName.length > !undefined) {
+    } else if (actorName.length > !undefined) {
       displayActor(actorName);
     }
     searchForm.reset();

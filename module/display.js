@@ -24,7 +24,7 @@ function displayInfo(movieList) {
     box.classList.add("boxStyle");
 
     box.append(imgEl, titleH3, releaseDateH5);
-    
+
     slideBoxes(box);
 
     resultDiv.append(box);
@@ -43,7 +43,6 @@ function displayInfoSearch(movieList) {
     } else {
       imgEl.src = `https://image.tmdb.org/t/p/w300/${movieList[i].poster_path}`;
     }
-
 
     let titleH3 = document.createElement("h3");
     titleH3.innerText = movieList[i].title;
@@ -123,9 +122,7 @@ function displayCategoryError(category, textInputSearch) {
   errorH1El.style.textAlign = "center";
 
   resultDiv.append(errorH1El);
-
 }
-
 
 function displayFetchError() {
   resultDiv.innerHTML = "";
@@ -137,18 +134,17 @@ function displayFetchError() {
   resultDiv.append(errorH1El);
 }
 
-
-  function slideBoxes(box) {
-    const slide = {
-      targets: box,
-      keyframes: [
-        {translateX: -2000, duration: 0.1},
-        {translateX: 0, duration: 1500},
-      ],
-      easing: "linear"
-      }
-      anime(slide);
+function slideBoxes(box) {
+  const slide = {
+    targets: box,
+    keyframes: [
+      { translateX: -2000, duration: 0.1 },
+      { translateX: 0, duration: 1500 },
+    ],
+    easing: "linear"
   }
+  anime(slide);
+}
 
 
 
