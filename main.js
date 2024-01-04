@@ -33,7 +33,7 @@ searchForm.addEventListener("submit", async event => {
   if (rbMovies === true) {
 
     if (movieName === "not found") {
-      displayCategoryError("Movie ", textInputSearch)
+      displayCategoryError("Movie ", textInputSearch);
     } else if (movieName.length > !undefined) {
       displayInfoSearch(movieName);
     }
@@ -42,7 +42,7 @@ searchForm.addEventListener("submit", async event => {
   else if (rbName === true) {
 
     if (actorName === "not found") {
-      displayCategoryError("Actor ", textInputSearch)
+      displayCategoryError("Actor ", textInputSearch);
     } else if (actorName.length > !undefined) {
       displayActor(actorName);
     }
