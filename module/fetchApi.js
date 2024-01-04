@@ -17,8 +17,8 @@ async function fetchTmdb(urlApi) {
       return data.results;
     }
   }
-  catch {
-    return displayFetchError();
+  catch(error) {
+    displayFetchError();
   }
 
 }

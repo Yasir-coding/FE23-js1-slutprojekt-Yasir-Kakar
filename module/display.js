@@ -143,9 +143,9 @@ function displayFetchError() {
       targets: box,
       keyframes: [
         {translateX: -2000, duration: 0.1},
-        {translateX: 0, duration: 4000},
+        {translateX: 0, duration: 1500},
       ],
-      easing: 'easeOutElastic(1, .8)'
+      easing: "linear"
       }
       anime(slide);
   }
