@@ -134,10 +134,7 @@ function displayFetchError() {
 function slideBoxes(box) {
   const slide = {
     targets: box,
-    keyframes: [
-      { translateX: -2000, duration: 0.1 },
-      { translateX: 0, duration: 1500 },
-    ],
+    translateX: [-2000, 0],
     easing: "linear"
   }
   anime(slide);
